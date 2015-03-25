@@ -295,7 +295,10 @@ public class TicketManager {
 
             Ticket t = new Ticket(description, priority, reporter, dateReported);
             //ticketQueue.add(t);
-            addTicketInPriorityOrder(ticketQueue, t);
+            //addTicketInPriorityOrder(ticketQueue, t); //Don't need this anymore
+
+            ticketQueue.add(t);
+            Collections.sort(ticketQueue);   //add a ticket, then sort the list.
 
             printAllTickets(ticketQueue);
 

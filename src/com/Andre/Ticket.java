@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * Created by Andre on 2/26/2015.
  */
-public class Ticket {
+public class Ticket implements Comparable<Ticket> {
     private int priority;
     private String reporter; //Stores person or department who reported issue
     private String description;
@@ -62,4 +62,17 @@ public class Ticket {
                 this.dateReported + ", Resolved: " + resolutionString +
                 ", Resolved Date: " + resolvedDateString);
     }
+
+    public int compareTo(Ticket anotherTicket) {
+
+        if (this.priority < anotherTicket.getPriority() ) {
+            return 1;
+        } else if (this.priority > anotherTicket.getPriority()) {
+            return -1;
+        } else {
+            return 0;
+        }
+
+    }
+
 }
