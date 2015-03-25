@@ -13,6 +13,18 @@ public class Ticket implements Comparable<Ticket> {
     private Date resolvedDate;
     private String resolution;
 
+    public Date getDateReported() {
+        return dateReported;
+    }
+
+    public String getResolution() {
+        return resolution;
+    }
+
+    public Date getResolvedDate() {
+        return resolvedDate;
+    }
+
     //STATIC Counter - accessible to all Ticket objects.
     //If any Ticket object modifies this counter, all Ticket objects will have the modified value
     //Make it private - only Ticket objects should have access

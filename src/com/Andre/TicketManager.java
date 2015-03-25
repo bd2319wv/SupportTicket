@@ -11,7 +11,8 @@ Program to Manage Support Tickets
 public class TicketManager {
 
     public static void main(String[] args) throws IOException{
-
+        TicketGUI gui = new TicketGUI();
+/*
         // Create an instance of SimpleDateFormat used for formatting
         // the string representation of date (month/day/year)
         DateFormat df = new SimpleDateFormat("MMM_dd_yyyy");
@@ -346,7 +347,7 @@ public class TicketManager {
             //println will try to call toString on its argument
         }
         System.out.println(" ------- End of ticket list ----------");
-
+*/
     }
 }
 
